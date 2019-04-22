@@ -14,11 +14,10 @@ The application allows users to post and view other peoples pitches.Users are ab
 * An internet connection is recquired
 * Prerequiites
 - Python 3.6
-* Clone the Repo
+* Clone the Repo:$ git clone https://github.com/chiriket/Pitch.git && cd PitchIt
 * Install Postgres
-* Create a Virtual Environment.$ source virtual/bin/activate
-* Install dependencies
-* Install -r requirements
+* Create a Virtual Environment:$ source virtual/bin/activate
+* Install dependencies:pip3 install -r requirements
 * Prepare environment variables
 * Run $./start.sh
 
