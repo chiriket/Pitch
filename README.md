@@ -21,7 +21,7 @@ The application allows users to post and view other peoples pitches.Users are ab
 |                     | button             |                     |
 |---------------------|--------------------|---------------------|                                                    |                     |                    |                     |
 | Upvote/ Downvote    |Click upvote 	   |Vote on a pitch      |                                                    |/Downvote            |                    |                     |
-|_____________________|____________________|_____________________|
+|                     |                    |                     |
 
 ## Setup/Installation Requirements
 
