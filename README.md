@@ -13,14 +13,14 @@ The application allows users to post and view other peoples pitches.Users are ab
 | Create  Account	  |Click on Sign in    |Fill the sign in form|
 |---------------------|--------------------|---------------------|
 | Log in              |Fill the login form |Go to home page      |
-|---------------------|--------------------|---------------------|	                                                 | View Pitches        | Click category     |list of pitches      |
+|---------------------|--------------------|---------------------|	                                                  | View Pitches        | Click category     |list of pitches      |
 |---------------------|--------------------|---------------------|		
 | Add a new Pitch	  |Click Add Pitch     |Fill in details      |
 |---------------------|--------------------|---------------------|	
 | Add a comment       |Click on the comment|Add comment for pitch|
 |                     | button             |                     |
-|---------------------|--------------------|---------------------|                                                   |                     |                    |                     |
-| Upvote/ Downvote    |Click upvote| 	   |Vote on a pitch      |                                                   |/Downvote            |                    |                     |
+|---------------------|--------------------|---------------------|                                                    |                     |                    |                     |
+| Upvote/ Downvote    |Click upvote 	   |Vote on a pitch      |                                                    |/Downvote            |                    |                     |
 |_____________________|____________________|_____________________|
 
 ## Setup/Installation Requirements
