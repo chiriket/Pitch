@@ -9,25 +9,24 @@ The application allows users to post and view other peoples pitches.Users are ab
 
 ## BDD
 |BEHAVIOUR            | INPUT              |   OUTPUT            |
-|---------------------|--------------------|---------------------|
+|:-------------------:|--------------------|---------------------|
 | Create  Account	  |Click on Sign in    |Fill the sign in form|
 |---------------------|--------------------|---------------------|
 | Log in              |Fill the login form |Go to home page      |
-|---------------------|--------------------|---------------------|	           |   | View Pitches        |Click on  category  |list of pitches      |
+|---------------------|--------------------|---------------------|	                                                 | View Pitches        | Click category     |list of pitches      |
 |---------------------|--------------------|---------------------|		
 | Add a new Pitch	  |Click Add Pitch     |Fill in details      |
 |---------------------|--------------------|---------------------|	
 | Add a comment       |Click on the comment|Add comment for pitch|
 |                     | button             |                     |
-|---------------------|--------------------|---------------------|                 |                     |                    |                     |
-| Upvote/ Downvote    |Click upvote| 	   |Vote on a pitch      |               | |                     |  /Downvote         |                     |
+|---------------------|--------------------|---------------------|                                                   |                     |                    |                     |
+| Upvote/ Downvote    |Click upvote| 	   |Vote on a pitch      |                                                   |/Downvote            |                    |                     |
 |_____________________|____________________|_____________________|
 
 ## Setup/Installation Requirements
 
 * An internet connection is recquired
-* Prerequiites
-- Python 3.6
+* Prerequiites -Python 3.6
 * Clone the Repo:$ git clone https://github.com/chiriket/Pitch.git && cd PitchIt
 * Install Postgres
 * Create a Virtual Environment:$ source virtual/bin/activate
