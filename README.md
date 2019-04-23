@@ -7,7 +7,21 @@ This is an application where users can post their pitches and view other peoples
 ## Description
 The application allows users to post and view other peoples pitches.Users are able to upvote and downvote pitches.They are also able to comment on the pitches.
 
-
+## BDD
+|BEHAVIOUR            | INPUT              |   OUTPUT            |
+|---------------------|--------------------|---------------------|
+| Create  Account	  |Click on Sign in    |Fill the sign in form|
+|---------------------|--------------------|---------------------|
+| Log in              |Fill the login form |Go to home page      |
+|---------------------|--------------------|---------------------|	           |   | View Pitches        |Click on  category  |list of pitches      |
+|---------------------|--------------------|---------------------|		
+| Add a new Pitch	  |Click Add Pitch     |Fill in details      |
+|---------------------|--------------------|---------------------|	
+| Add a comment       |Click on the comment|Add comment for pitch|
+|                     | button             |                     |
+|---------------------|--------------------|---------------------|                 |                     |                    |                     |
+| Upvote/ Downvote    |Click upvote| 	   |Vote on a pitch      |               | |                     |  /Downvote         |                     |
+|_____________________|____________________|_____________________|
 
 ## Setup/Installation Requirements
 
@@ -19,7 +33,7 @@ The application allows users to post and view other peoples pitches.Users are ab
 * Create a Virtual Environment:$ source virtual/bin/activate
 * Install dependencies:pip3 install -r requirements
 * Prepare environment variables
-* Run $./start.sh
+* Run: $ ./start.sh
 
 
 
