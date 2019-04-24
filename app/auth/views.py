@@ -4,11 +4,9 @@ from ..models import User
 from .forms import RegistrationForm
 from .. import db
 from flask_login import login_user,logout_user,login_required
+from ..email import mail_message
 
 
-@auth.route('/login')
-def login():
-    return render_template('auth/login.html')
 
 @auth.route('/register',methods = ["GET","POST"])
 def register():
@@ -32,7 +30,7 @@ def login():
 
         flash('Invalid username or Password')
 
-    title = "watchlist login"
+    title = "pitch login"
     return render_template('auth/login.html',login_form = login_form,title=title)
 
 @auth.route('/logout')
