@@ -2,12 +2,13 @@ import os
 
 class Config:
     '''
-    General configuration parent class   
+    General configuration parent class
     '''
-    # SQLALCHEMY_TRACK_MODIFICATIONS = False
-    # UPLOADED_PHOTOS_DEST ='app/static/photos'
     SECRET_KEY = os.environ.get('SECRET_KEY')
-    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://shirley:1234@localhost/PitchIt'
+    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://shirley:1234@localhost/pitch'
+    UPLOADED_PHOTOS_DEST ='app/static/photos'
+    CSRF_ENABLED = True
+
 
     #  email configurations
     MAIL_SERVER = 'smtp.googlemail.com'
@@ -20,22 +21,30 @@ class Config:
 class ProdConfig(Config):
     '''
     Production  configuration child class
-
     Args:
         Config: The parent configuration class with General configuration settings
     '''
     pass
 
+    # SQLALCHEMY_DATABASE_URI = os.environ.get("DATABASE_URL")
+
+
+class TestConfig(Config):
+    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://shirley:1234@localhost/pitch_test'
+
 
 class DevConfig(Config):
     '''
     Development  configuration child class
-
     Args:
         Config: The parent configuration class with General configuration settings
     '''
+
+    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://shirley:1234@localhost/pitch'
     DEBUG = True
 
 config_options = {
 'development':DevConfig,
-'production':ProdConfig
+'production':ProdConfig,
+'test':TestConfig
+}

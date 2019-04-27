@@ -3,7 +3,8 @@ from wtforms import StringField,TextAreaField,SubmitField, DateField, SelectFiel
 from wtforms.validators import Required
 
 class PitchForm(FlaskForm):
-    category = SelectField('Type',choices=[('Pick Up Lines','Pick Up Lines'),('Interview','Interview'), ('Product','Product'), ('Promotion','Promotion'), ('Business','Business'), ('Tech','Tech')],validators=[Required()])
+    title = StringField('Pitch Title',validators=[Required()])
+    category = SelectField('Type',choices=[('Interview','Interview'), ('Product','Product'), ('Promotion','Promotion'), ('Business','Business'), ('Tech','Tech')],validators=[Required()])
     pitch = TextAreaField('Pitch')
     submit = SubmitField('Submit')
 

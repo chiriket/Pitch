@@ -12,8 +12,6 @@ class RegistrationForm(FlaskForm):
     password_confirm = PasswordField('Confirm Passwords',validators = [Required()])
     submit = SubmitField('Sign Up')
 
-class RegistrationForm(FlaskForm):
-    # .......
     def validate_email(self,data_field):
             if User.query.filter_by(email =data_field.data).first():
                 raise ValidationError('There is an account with that email')
